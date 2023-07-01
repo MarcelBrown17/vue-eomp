@@ -1,0 +1,16 @@
+{
+    "skills": [
+          {
+            "id":"0",
+            "softSkill1":"",
+            "softSkill2":"",
+            "softSkill3":""
+          },
+          {
+            "id":"1",
+            "skill1":"",
+            "skill2":"",
+            "skill3":""
+          }
+    ]
+}

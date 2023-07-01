@@ -1,0 +1,46 @@
+{
+    "projects": [
+          {
+            "id": 0,
+            "name": "Hulu Website",
+            "github":"https://github.com/MarcelBrown17/Hulu_website.git",
+            "websiteLink":"https://courageous-froyo-c4d447.netlify.app",
+            "imgSrc": ""
+          },
+          {
+            "id": 1,
+            "name": "Group Website",
+            "github":"https://github.com/ZubsZero/collabproject",
+            "websiteLink":"https://coruscating-otter-f4cb1e.netlify.app/",
+            "imgSrc": "p"
+          },
+          {
+            "id": 2,
+            "name": "Bootstrap EOMP Website",
+            "github":"https://github.com/MarcelBrown17/Project_week.git",
+            "websiteLink":"https://timely-tartufo-1d4e25.netlify.app",
+            "imgSrc": ""
+          },
+          {
+            "id": 3,
+            "name": "Ecommerce Website",
+            "github":"https://github.com/MarcelBrown17/Ecommerce.git",
+            "websiteLink":"https://quiet-naiad-c3a0cc.netlify.app",
+            "imgSrc": ""
+          },
+          {
+            "id": 4,
+            "name": "Group Ecommerce Website",
+            "github":"https://github.com/Del1rius/group_ecommerce.git",
+            "websiteLink":"https://group-ecommerce-site.netlify.app",
+            "imgSrc": ""
+          },
+          {
+            "id": 5,
+            "name": "JavaScript EOMP Website",
+            "github":"https://github.com/MarcelBrown17/JavaScript_Project.git",
+            "websiteLink":"https://helpful-biscochitos-1a88ba.netlify.app",
+            "imgSrc": ""
+          }
+    ]
+}
