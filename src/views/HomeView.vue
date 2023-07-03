@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
-  
-  </div>
+ <HomeComp/>
 </template>
 
 <script>
@@ -12,7 +10,7 @@ import HomeComp from '@/components/Home-Comp.vue'
 export default {
   name: 'HomeView',
   components: {
-    HomeComp
+     HomeComp
   }
 }
 </script>

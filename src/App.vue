@@ -1,5 +1,4 @@
 <template>
-
 <NavBarComp/>
   <router-view/>
   <FooterComp/>
@@ -26,4 +25,14 @@ components: {NavBarComp, FooterComp}
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 </style>
