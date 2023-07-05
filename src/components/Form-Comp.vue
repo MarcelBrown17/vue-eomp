@@ -1,6 +1,6 @@
 <template>
-    <body class="body ">
-    <h1 class="pt-3 text-center fw-bold display-4">Contact Us</h1>
+    <body class="back-img">
+    <h1 class="pt-5 text-center fw-bold display-4">Contact Us</h1>
         <!--Section: Contact v.2-->
 <section class="mb-5 mt-3">
 
@@ -113,8 +113,15 @@ export default{
 *{
     overflow: hidden;
 }
-.body{
-    min-width: 100vh;
+
+
+
+.back-img{
+    background-image: url("https://i.postimg.cc/y8Y137M1/wallpaperflare-com-wallpaper-22.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: optimizeSpeed;
 }
 
 .heading{

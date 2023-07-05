@@ -1,6 +1,6 @@
 <template>
      <header>
-    <div class="nav-container mb-5 pb-1">
+    <div class="nav-container pb-4">
       <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <span class="navbar-brand">Marcel Brown</span>

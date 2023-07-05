@@ -1,6 +1,6 @@
 <template>
     <!-- Footer -->
-    <footer class="bg-dark text-center mt-5">
+    <footer class="bg-dark text-center">
       <!-- Grid container -->
       <div class="container p-4">
         <!-- Section: Social media -->
@@ -120,7 +120,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .link {
     text-decoration: none !important;
     }

@@ -18,7 +18,7 @@
         {
      "id":"1",
      "name":"Zubair Matthee",
-     "description":">Marcel is a hardworking individual who consistently demonstrates a strong work ethic and dedication towards his goals. He is willing to put in the time and effort to achieve success, and is motivated to continuously improve himself and his work. ",
+     "description":"Marcel is a hardworking individual who consistently demonstrates a strong work ethic and dedication towards his goals. He is willing to put in the time and effort to achieve success, and is motivated to continuously improve himself and his work. ",
      "imgSrc":""
         },
         {
@@ -48,57 +48,77 @@
       "name": "Hulu Website",
       "github":"https://github.com/MarcelBrown17/Hulu_website.git",
       "websiteLink":"https://courageous-froyo-c4d447.netlify.app",
-      "imgSrc": ""
+      "imgSrc": "https://i.postimg.cc/BvypWWfH/Hulu.png"
     },
     {
       "id": 1,
       "name": "Group Website",
       "github":"https://github.com/ZubsZero/collabproject",
       "websiteLink":"https://coruscating-otter-f4cb1e.netlify.app/",
-      "imgSrc": "p"
+      "imgSrc": "https://i.postimg.cc/8zNnwVTC/collab.png"
     },
     {
       "id": 2,
       "name": "Bootstrap EOMP Website",
       "github":"https://github.com/MarcelBrown17/Project_week.git",
       "websiteLink":"https://timely-tartufo-1d4e25.netlify.app",
-      "imgSrc": ""
+      "imgSrc": "https://i.postimg.cc/3R4LW8Ft/project-week.png"
     },
     {
       "id": 3,
-      "name": "Ecommerce Website",
-      "github":"https://github.com/MarcelBrown17/Ecommerce.git",
-      "websiteLink":"https://quiet-naiad-c3a0cc.netlify.app",
-      "imgSrc": ""
+      "name": "Temperature Converter",
+      "github":"https://github.com/MarcelBrown17/JavaScript_TemperatureCoverter.git",
+      "websiteLink":"https://magical-puffpuff-f6c61b.netlify.app",
+      "imgSrc": "https://i.postimg.cc/xdM4fTjn/temp.png"
     },
     {
       "id": 4,
-      "name": "Group Ecommerce Website",
-      "github":"https://github.com/Del1rius/group_ecommerce.git",
-      "websiteLink":"https://group-ecommerce-site.netlify.app",
-      "imgSrc": ""
+      "name": "Ecommerce Website",
+      "github":"https://github.com/MarcelBrown17/Ecommerce.git",
+      "websiteLink":"https://quiet-naiad-c3a0cc.netlify.app",
+      "imgSrc": "https://i.postimg.cc/KYK7D93z/ecommerce-practice.png"
     },
     {
       "id": 5,
+      "name": "Group Ecommerce Website",
+      "github":"https://github.com/Del1rius/group_ecommerce.git",
+      "websiteLink":"https://group-ecommerce-site.netlify.app",
+      "imgSrc": "https://i.postimg.cc/k4KxkBcP/Imraan.png"
+    },
+    {
+      "id": 6,
       "name": "JavaScript EOMP Website",
       "github":"https://github.com/MarcelBrown17/JavaScript_Project.git",
       "websiteLink":"https://helpful-biscochitos-1a88ba.netlify.app",
-      "imgSrc": ""
+      "imgSrc": "https://i.postimg.cc/902GVC8R/Skateboard.png"
     }
+  
 ],
 
 "skills": [
     {
       "id":"0",
-      "softSkill1":"",
-      "softSkill2":"",
-      "softSkill3":""
+      "title":"Skills",
+      "skill1":"Html",
+      "skill2":"Css",
+      "skill3":"Bootstrap",
+      "skill4":"JavaScript"
+    },
+    {
+      "id":"0",
+      "title":"Soft Skills",
+      "skill1":"Communication",
+      "skill2":"Team Work",
+      "skill3":"Time Management",
+      "skill4":"Leader"
     },
     {
       "id":"1",
-      "skill1":"",
-      "skill2":"",
-      "skill3":""
+      "title":"Technical Skills",
+      "skill1":"Microsoft Office",
+      "skill2":"Vue.js",
+      "skill3":"HTML",
+      "skill4":"CSS"
     }
 ]
-};
+}

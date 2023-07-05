@@ -22,6 +22,18 @@ components: {NavBarComp, FooterComp}
 
 <style>
 
+@import url('https://fonts.cdnfonts.com/css/aferd');  
+
+header {
+    font-family: 'aferd', sans-serif !important;                                             
+}
+body {
+    font-family: 'aferd', sans-serif !important;                                             
+}
+footer {
+    font-family: 'aferd', sans-serif !important;                                             
+}
+
 nav a.router-link-exact-active {
   color: #42b983;
 }
