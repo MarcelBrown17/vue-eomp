@@ -1,10 +1,11 @@
 {
     "education": [
           {
-           "nameOfSchool":"Elsies River High School",
-           "Subject1": "Computer Applications Technology",
-           "Subject2": "Economics",
-           "Subject3": "Business"                    
+           "school":"Elsies River High School",
+           "subject1": "Computer Applications Technology",
+           "subject2": "Economics",
+           "subject3": "Business",
+           "highestDegree": "Matric certificate"                    
           }
     ],
     
@@ -13,31 +14,37 @@
      "id":"0",
      "name":"Jason Barron",
      "description":"Marcel is an exceptional person who epitomizes excellence in all aspects of life. His unwavering positive attitude and exceptional work ethic is contagious, inspiring all those around him to strive for greatness. He possesses the ability to communicate effectively, listen gracefully, and offer valuable insights to help others grow.",
-     "imgSrc":""
+     "imgSrc":"https://i.postimg.cc/QMZRGNzr/picture2.jpg"
         },
         {
      "id":"1",
      "name":"Zubair Matthee",
      "description":"Marcel is a hardworking individual who consistently demonstrates a strong work ethic and dedication towards his goals. He is willing to put in the time and effort to achieve success, and is motivated to continuously improve himself and his work. ",
-     "imgSrc":""
+     "imgSrc":"https://i.postimg.cc/gcHMgLm6/IMG-20230414-WA0007.jpg"
         },
         {
      "id":"2",
      "name":"Connor Winkworth",
      "description":"Marcel is dedicated and committed to his craft, constantly pushing himself to improve and overcome any challenges he faces. He has strong desire to succeed and a passion for what he does, which fuels his determination to put in the necessary time and effort to achieve his goals.",
-     "imgSrc":""
+     "imgSrc":"https://i.postimg.cc/k4nzG191/C12-C2-Connor-Winkworth.jpg"
         },
         {
      "id":"3",
      "name":"Mish-al Taliep",
      "description":" Marcel is able to inspire and motivate those around him through their infectious positive attitude. His charisma enables them to be an effective leader, building strong relationships with colleagues and inspiring them to work towards a shared goal. ",
-     "imgSrc":""
+     "imgSrc":"https://i.postimg.cc/6q40pn7b/C12-Mish-Al-Taliep-1.jpg"
         },
         {
      "id":"4",
      "name":"Jamie-Lee Kinnear",
      "description":"Marcel is a remarkable programmer and has an analytical approach to problem solving. He is a hardworking individual and dedicated to his work. He is a great peer and a team player. He show's initiative and I believe he would be a valuable asset to any company that would be lucky to have him.",
-     "imgSrc":""
+     "imgSrc":"https://i.postimg.cc/cLSFPFkD/self-portrait.jpg"
+        },
+        {
+     "id":"5",
+     "name":"Uthmaan Samsodien",
+     "description":"Marcel is an exceptionally capable individual whose analytical skills set him apart. His meticulous approach to problem-solving is commendable. His ability to dissect complex problems and devise effective solutions is truly remarkable. Marcel's intelligence, dedication, and adaptability make him an invaluable asset to any team or project.",
+     "imgSrc":"https://i.postimg.cc/0yKbXnTB/IMG-6957-1.jpg"
         }
   ],
 
@@ -102,7 +109,8 @@
       "skill1":"Html",
       "skill2":"Css",
       "skill3":"Bootstrap",
-      "skill4":"JavaScript"
+      "skill4":"JavaScript",
+      "imgSrc": "https://i.postimg.cc/prYcs1Q5/90510680-businessman-happy-multitasking-and-multi-skill-with-business-icons-background-cartoon-chara.webp"
     },
     {
       "id":"0",
@@ -110,7 +118,8 @@
       "skill1":"Communication",
       "skill2":"Team Work",
       "skill3":"Time Management",
-      "skill4":"Leader"
+      "skill4":"Leader",
+      "imgSrc": "https://i.postimg.cc/0QMWDyHQ/6943385.jpg"
     },
     {
       "id":"1",
@@ -118,7 +127,8 @@
       "skill1":"Microsoft Office",
       "skill2":"Vue.js",
       "skill3":"HTML",
-      "skill4":"CSS"
+      "skill4":"CSS",
+      "imgSrc": ""
     }
 ]
 }

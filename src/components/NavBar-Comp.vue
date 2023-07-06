@@ -1,9 +1,9 @@
 <template>
      <header>
-    <div class="nav-container pb-4">
+    <div class="nav-container pb-5">
       <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <span class="navbar-brand">Marcel Brown</span>
+    <h1 class="navbar-brand">Marcel Brown</h1>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,9 +47,14 @@ export default {
 </script>
 
 <style>
-.navbar-brand{
-  font-size: 40px !important;
+.navbar-brand {
+  font-size: 40px;
   font-weight: bold;
-  margin-left: 1%;
 }
+
+@media only screen and (max-width: 300px) {
+
+.navbar-brand {font-size: 20px !important;}
+}
+
 </style>

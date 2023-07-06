@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
     />
+
 </head>
 </template>
 
@@ -21,17 +22,18 @@ components: {NavBarComp, FooterComp}
 </script>
 
 <style>
-
-@import url('https://fonts.cdnfonts.com/css/aferd');  
+   @import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+                
 
 header {
-    font-family: 'aferd', sans-serif !important;                                             
+       font-family: '8BIT WONDER', sans-serif !important;
+                                                
 }
-body {
-    font-family: 'aferd', sans-serif !important;                                             
-}
+
+
 footer {
-    font-family: 'aferd', sans-serif !important;                                             
+    font-family: '8BIT WONDER', sans-serif !important;
+                                                
 }
 
 nav a.router-link-exact-active {
@@ -45,6 +47,14 @@ nav a.router-link-exact-active {
 
 body {
   overflow-x: hidden;
+  font-family: '8BIT WONDER', sans-serif !important;
 }
+
+@media only screen and (max-width: 300px) {
+
+  body {font-size: smaller !important;}
+}
+
+
 
 </style>

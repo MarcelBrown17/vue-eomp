@@ -1,20 +1,27 @@
 <template>
   <body class="back-img">
-
-
-   <div class="row row-cols-1 row-cols-md-3 g-4 h-100">
-      <div class="col mb-4 px-5"  v-for="testimonials in testimonials"
-        :key="testimonials.id">
-        <div class="card bg-secondary text-dark h-100 ">
-          <img
-            src="testimonials.imgSrc"
-            loading="lazy"
-            class="card-img-top"
-            alt="testimonials.name"
-          />
-          <div class="card-body">
-            <h5 class="card-title">{{ testimonials.name }}</h5>
-            <p class="card-text">{{ testimonials.description }}</p>
+    <div class="container">
+      <div class="text-light pb-5">
+        <span class="heading">Testimonials</span>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3">
+        <div
+          class="col mb-4 p-auto"
+          id="card"
+          v-for="testimonials in testimonials"
+          :key="testimonials.id"
+        >
+          <div class="card bg-dark text-light h-100">
+            <img
+              :src="testimonials.imgSrc"
+              loading="lazy"
+              class="card-img-top"
+              alt="testimonials.name"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ testimonials.name }}</h5>
+              <p class="card-text">{{ testimonials.description }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -45,4 +52,25 @@ export default {
   image-rendering: optimizeSpeed;
 }
 
+.container {
+  padding-top: 5rem !important;
+  margin: auto !important;
+}
+
+.card-img-top {
+  height: 25rem;
+}
+
+.heading {
+  font-size: 30px !important;
+}
+
+@media only screen and (max-width: 300px) {
+  .card-img-top {
+    height: 18rem !important;
+  }
+  .heading {
+    font-size: 25px !important;
+  }
+}
 </style>

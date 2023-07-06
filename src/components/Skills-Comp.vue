@@ -1,42 +1,36 @@
-<template>
-  <router-link :to="{ name: 'Skills', params: { id: skills.id } }">
-    <div class="row">
-      <div class="col" v-for="skills in data" :key="skills.ID">
-        <div class="card" style="width: 18rem">
-          <img :src="skills.image" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h1>{{ skills.name }}</h1>
-          </div>
-        </div>
+<!-- <template>
+ <template>
+  <body class="back-img">
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
-  </router-link>
+  </div>
+</div>
+  </body>
 </template>
-
 <script>
 export default {
-  data() {
-    return {
-      data: [],
-    };
-  },
-  methods: {
-    async fetchData() {
-      const res = await fetch(
-        ""
-      );
-      let parsedData = await res.json();
-      this.data = parsedData.skills;
+  computed: {
+    skills() {
+      return this.$store.state.skills;
     },
   },
   mounted() {
-    this.fetchData;
+    this.$store.dispatch("fetchSkill");
   },
 };
-
+</script>
 
 </script>
 
 <style scoped>
 
-</style>
+</style> -->

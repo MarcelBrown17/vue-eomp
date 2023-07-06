@@ -5,8 +5,8 @@
       <section>
   <div class="margin"></div>
   <section>
-    <h1 data-text="Welcome to my portfolio." class="text-light text-center fw-bold" id="h1"></h1>
-    <div class="welcome-message"><span class="text-light display-3 text-center">I am an aspiring stack<br>stack developer.</span></div>
+    <h1 data-text="Welcome to my portfolio." class="text-light text-center fw-bold display-3 pt-3 px-2" id="h1"></h1>
+    <div class="welcome-message px-2"><span class="text-light display-4 text-center">I am an aspiring stack<br>stack developer.</span></div>
    </section>
 
    </section>
@@ -56,14 +56,7 @@ export default {};
 
 <style scoped>
 
-@import url('https://fonts.cdnfonts.com/css/aferd');  
-
-*{
-    font-family: 'aferd', sans-serif !important;                                             
-}
-
 body {
-  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -101,7 +94,6 @@ padding-top: 3rem;
     width: 100%;
   }
   #h1 {
-    font-size: 70px !important;
     color: var(--var-color);
     position: relative;
   }
@@ -110,7 +102,7 @@ padding-top: 3rem;
     text-shadow: 0px 0px 30px rgb(39, 20, 177);
     filter: blur(0px) brightness(0);
     animation: flicker 2s linear forwards;
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
   }
   @keyframes flicker {
     0% {
@@ -152,19 +144,20 @@ padding-top: 3rem;
   border: solid 2px black !important;
 }
 .card-container{
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 img {
   height: 300px;
 }
 
 .margin {
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
-@media only screen and (max-width:300px){
-  h1{
-    font-size:small !important;
+
+@media only screen and (max-width: 300px) {
+  img {
+    height: auto !important;
   }
 }
 
