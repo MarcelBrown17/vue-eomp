@@ -11,7 +11,7 @@
             class="card-img-top h-90"
             alt="projects.name"
           />
-          <div class="card-body text-light text-center py-1">
+          <div class="card-body text-light text-center pb-1 mx-auto my-auto">
             <h5 class="card-title">{{ projects.name }}</h5>
             <a
             class="btn btn-dark btn-floating m-1 px-4 py-2"
@@ -22,7 +22,7 @@
             > <i class="fab fa-github"></i
           ></a>
             <a
-            class="btn btn-primary btn-floating m-1 px-4 py-2"
+            class="btn btn-dark btn-floating m-1 px-4 py-2"
             style="background-color: #000000"
             :href="projects.websiteLink"
             role="button"
@@ -64,10 +64,15 @@ min-height: 100vh;
     background-color: #161515;
 }
 
+.heading {
+padding-top: 60px !important;
+}
+
 @media only screen and (max-width: 300px) {
 
 .heading {
     text-align: center;
+    padding-top: 0;
 }
 }
 
