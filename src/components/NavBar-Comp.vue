@@ -48,7 +48,7 @@ export default {
 
 <style>
 .navbar-brand {
-  font-size: 40px;
+  font-size: 40px !important;
   font-weight: bold;
 }
 
