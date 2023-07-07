@@ -7,7 +7,7 @@
         <section class="mb-4">
           <!-- Facebook -->
           <a
-            class="btn btn-primary btn-floating m-1"
+            class="btn btn-primary btn-floating m-1 border-0"
             id="social-link"
             style="background-color: #3b5998"
             href="https://www.facebook.com/profile.php?id=100091889492469&mibextid=ZbWKwL"
@@ -18,7 +18,7 @@
 
           <!-- Twitter -->
           <a
-            class="btn btn-primary btn-floating m-1"
+            class="btn btn-primary btn-floating m-1 border-0"
             id="social-link"
             style="background-color: #55acee"
             href="https://twitter.com/Cellovfx?t=1D6_QmZ-1rKySr7FDu6WPw&s=31"
@@ -29,7 +29,7 @@
 
           <!-- Instagram -->
           <a
-            class="btn btn-primary btn-floating m-1"
+            class="btn btn-primary btn-floating m-1 border-0"
             id="social-link"
             style="background-color: #ac2bac"
             href="https://instagram.com/cellovfx?igshid=ZGUzMzM3NWJiOQ=="
@@ -40,7 +40,7 @@
 
           <!-- Github -->
           <a
-            class="btn btn-primary btn-floating m-1"
+            class="btn btn-primary btn-floating m-1 border-0"
             id="social-link"
             style="background-color: #333333"
             href="https://github.com/MarcelBrown17"
