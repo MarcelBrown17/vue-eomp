@@ -11,9 +11,6 @@
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Education</button>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link  " id="work-exp-tab" data-bs-toggle="tab" data-bs-target="#work-exp" type="button" role="tab" aria-controls="work-exp" aria-selected="false">Work Experience</button>
-  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -21,15 +18,15 @@
 <div class="row my-auto py-5 mx-auto my-auto">
   <div class="col-md-1">
   </div>
-  <div class="col-md-3 fs-5 fw-bold my-auto d-inline" id="profile-card">
+  <div class="col-md-3 fs-5 fw-bold my-auto d-inline  text-wrap" id="profile-card">
     
-                          <h1>Profile</h1>
+                          <h1 class="text-light">Profile</h1>
                          <div class="profile-card fluid"> <img src="https://i.postimg.cc/sf5mq9r1/c12-marcel-brown-1.jpg" class="Marcel rounded-3" loading="lazy" alt="Marcel"></div>
                           <p class="text-info">Name: <span class="text-light">Marcel</span></p>
                           <p class="text-info">Surname: <span class="text-light">Brown</span></p>
                           <p class="text-info">Gender: <span class="text-light">Male</span></p>
                           <p class="text-info">DOB: <span class="text-light">01/05/2004</span></p>
-                          <p class="text-info">Address: <span class="text-light">13 Alpine Way,<br> Matroosfontein</span></p>
+                          <p class="text-info">Address: <span class="text-light"> Elsies River</span></p>
                           <p class="text-info">Email: <br><span class="text-light" id="email">marcelbrown413@gmail.com</span></p>
                           <p class="text-info">Github: <span class="text-light" id="git"><br>MarcelBrown17</span></p>
     </div>
@@ -51,12 +48,56 @@
 
 </div>
 
-<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<div class="tab-pane fade py-5" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <div class="skills">
+     
+        <p class="text-center text-light h1 py-4"> My Skills</p>
+  
+      <div class="row row-cols-1 row-cols-md-3 g-5 mx-auto">
+        <div class="col"  v-for="skills in skills" :key="skills.id">
+          <div class="card h-100">
+            <div class="d-flex justify-content-center">
+              <img
+                :src="skills.image"
+                class="card-img-top py-2" loading="lazy" 
+                style="width: 9rem"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ skills.title }}</h5>
+              <p class="card-text">{{ skills.skillLevel }}</p>
+              <p class="card-text">{{ skills.desc }}</p>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
 </div>
+  
 
-<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex consequuntur, possimus, odio, culpa cupiditate dolorum nostrum atque laboriosam ea et expedita voluptatibus tempore a adipisci qui impedit optio. Fugiat?</div>
-
-<div class="tab-pane fade" id="work-exp" role="tabpanel" aria-labelledby="work-exp-tab">qwerghn</div>
+<div class="tab-pane fade pb-5" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <div class="row row-cols-1 row-cols-md-2 g-4 mx-auto px-2">
+      <div class="col py-5"  v-for="education in education" :key="education.id">
+        <div class="card h-100">
+          <div class="d-flex justify-content-center">
+            <img
+              :src="education.image"
+              class="card-img-top"
+              style="width: 9rem" loading="lazy" 
+              alt="..."
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ education.title }}</h5>
+            <p class="card-text">{{ education.Education }}</p>
+          </div>
+        </div>
+    </div>
+    </div>
+     
+   
+</div>
 
 </div>
     </div>
@@ -65,15 +106,27 @@
 
 <script>
 export default {
-    
+  computed: {
+    skills() {
+      return this.$store.state.skills;
+    },
+    education(){
+      return this.$store.state.education;
+    }
+  },
+  mounted() {
+    this.$store.dispatch("fetchSkill");
+    this.$store.dispatch("fetchEducation");
+
+  }
 }
 
 </script>
 
 <style scoped>
 
-body {
-  color: white;
+.col {
+  justify-content: center !important;
 }
 
 .back-img{
@@ -97,6 +150,11 @@ width: 100%;
 }
 
 
+#grid {
+margin: auto !important;
+}
+
+
 
 @media only screen and (max-width: 300px) {
   .Marcel {
@@ -116,7 +174,6 @@ margin: auto !important;
 .tab-content {
   margin: auto !important;
 }
-
-
 }
+
 </style>
