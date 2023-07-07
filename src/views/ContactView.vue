@@ -1,6 +1,9 @@
 <template>
     <NavBar-Comp/>
     <Form-comp/>
+    <body class="back-img">
+        
+    </body>
 </template>
 
 <script>
@@ -11,6 +14,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
+
 
 </style>
