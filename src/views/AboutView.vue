@@ -1,11 +1,11 @@
 <template>
-  <AboutNavComp/>
+  <AboutComp/>
 </template>
 
 <script>
-  import AboutNavComp from '../components/AboutNav-Comp.vue';
+  import AboutComp from '../components/About-Comp.vue';
 export default{
-components: {AboutNavComp}
+components: {AboutComp}
 }
 
 </script>

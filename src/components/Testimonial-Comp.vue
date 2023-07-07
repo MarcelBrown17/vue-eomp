@@ -20,7 +20,11 @@
             />
             <div class="card-body">
               <h5 class="card-title">{{ testimonials.name }}</h5>
-              <p class="card-text">{{ testimonials.description }}</p>
+                <button class="px-1"><a href="#demo" class="text-decoration-none text-dark" data-bs-toggle="collapse">More</a>
+<div id="demo" class="collapse">
+  <p class="card-text">{{ testimonials.description }} </p>
+</div></button>
+             
             </div>
           </div>
         </div>
@@ -58,11 +62,11 @@ export default {
 }
 
 .card-img-top {
-  height: 25rem;
+  height: 30rem;
 }
 
 .heading {
-  font-size: 30px !important;
+  font-size: 40px !important;
 }
 
 @media only screen and (max-width: 300px) {

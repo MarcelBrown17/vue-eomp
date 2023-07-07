@@ -1,6 +1,6 @@
 <template>
     <body class="back-img">
-    <h1 class="pt-5 text-center fw-bold display-4">Contact Us</h1>
+    <h1 class="pt-5 text-center fw-bold display-4">Contact Me</h1>
         <!--Section: Contact v.2-->
 <section class="mb-5 mt-3">
 
