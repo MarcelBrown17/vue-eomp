@@ -17,7 +17,7 @@
                 <div class="col-md-6 pt-1">
                     <label for="name" class="pb-1 fs-5">Your name</label>
                     <div class="md-form mb-0">
-                        <input type="text" id="name" name="name" class="form-control border-2 border border-dark" oninvalid="this.setCustomValidity('Please enter a valid name') placeholder="Enter your name">
+                        <input type="text" id="name" name="name" class="form-control border-2 border border-dark" required oninvalid="this.setCustomValidity('Please enter a valid name') placeholder="Enter your name">
                         
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="col-md-6 pt-1">
                     <div class="md-form mb-0">
                         <label for="email" class="pb-1 fs-5">Your email</label>
-                        <input type="text" id="email" name="email" class="form-control border-2 border border-dark" oninvalid="this.setCustomValidity('Please enter a valid email address') placeholder="Enter your email">
+                        <input type="text" id="email" name="email" class="form-control border-2 border border-dark" required oninvalid="this.setCustomValidity('Please enter a valid email address') placeholder="Enter your email">
                        
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                 <div class="col-md-12 pt-1">
                     <div class="md-form mb-0">
                         <label for="form_need" class="fs-5 pb-1">Subject</label>
-                                <select id="form_need" name="need" class="form-control border-2 border border-dark" required="required" data-error="Please specify your gender." oninvalid="this.setCustomValidity('Please enter a valid gender')>
+                                <select id="form_need" name="need" class="form-control border-2 border border-dark" required="required" data-error="Please specify your gender." required oninvalid="this.setCustomValidity('Please enter a valid gender')>
                                     <option value="" selected disabled>--Select your gender--</option>
                                     <option >Male</option>
                                     <option >Female</option>
@@ -61,7 +61,7 @@
 
                     <div class="md-form">
                         <label for="message" class="fs-5 pb-1">Your message</label>
-                        <textarea type="text" id="message" name="message" rows="2" class="form-control border-2 border border-dark md-textarea" placeholder="Enter your message" oninvalid="this.setCustomValidity('Please enter a valid mesage')></textarea>
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control border-2 border border-dark md-textarea" placeholder="Enter your message" required oninvalid="this.setCustomValidity('Please enter a valid mesage')></textarea>
                        
                     </div>
 
