@@ -1,40 +1,164 @@
 <template>
-           <body class="back-image1">
-              <!-- MAIN SECTION/ LANDING SECTION  -->
-              <div class="landing-container"> 
-            <div class="p-5 mb-4 rounded-3 border-2">
-           <div class="container-fluid py-5">
-             <h1 class="display-5 fw-bold">I am an aspiring stack developer</h1>
-             <p class="col-md-8 fs-4">
-              I am a well-rounded individual who enjoys a range of activities, including sports, coding, and gaming. I have a passion for challenging myself and developing new skills, whether it's on the field or in front of a computer screen.
-             </p>
-             <button type="button" class="btn btn-dark rounded-3"><router-link to="/about" class="text-decoration-none text-light">More about me</router-link></button>
-           </div>
-         </div>
-       </div>
-             <!-- end of main -->
-           </body>
+  <body class="back-img">
+    <!-- LANDING SECTION  -->
+    <div class="landing-container">
+      <section>
+  <div class="margin"></div>
+  <section>
+    <h1 data-text="Welcome to my portfolio." class="text-light text-center fw-bold display-3 pt-3 px-2" id="h1"></h1>
+    <div class="welcome-message px-2"><span class="text-light display-4 text-center">I am an aspiring stack<br>stack developer.</span></div>
+   </section>
+
+   </section>
+    </div>
+    <main>
+        <div class="card-container">
+            <div class="row row-cols-1 row-cols-md-3 px-5 justify-content-center text-center ">
+                <div class="col mb-3">
+                  <div class="card h-100">
+                    <img src="https://i.postimg.cc/qMGB7NZD/wallpaperflare-com-wallpaper-17.jpg" class="card-img-top" alt="profile" loading="lazy">
+                    <div class="card-body">
+                      <h4 class="card-title">Profile</h4>
+                      <span class="card-button"><button class="p-1 bg-dark"><router-link to="/about" class="text-decoration-none">More about me</router-link></button></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card h-100">
+                    <img src="https://i.postimg.cc/W13VbXZt/wallpaperflare-com-wallpaper-15.jpg" class="card-img-top" alt="projects" loading="lazy">
+                    <div class="card-body">
+                      <h4 class="card-title">Projects</h4>
+                      <span class="card-button"><button class="p-1 bg-dark"><router-link to="/projects" class="text-decoration-none">Projects</router-link></button></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <div class="card h-100">
+                    <img src="https://i.postimg.cc/Yq8kHJhJ/pngtree-graduation-testimonials-board-background-material-image-142880.jpg" class="card-img-top " alt="testimonials" loading="lazy">
+                    <div class="card-body">
+                      <h4 class="card-title">Testimonial</h4>
+                      <span class="card-button"><button class="p-1 bg-dark"><router-link to="/testimonial" class="text-decoration-none">Testimonials</router-link></button></span>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+      </main>
+    <!-- end of landing section -->
+  </body>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
 
-body{
-  overflow-x:hidden;
+body {
+  min-height: 100vh;
 }
 
-.back-image1 {
-    background-image: url("");
-    background-size: cover;
+.margin{
+padding-top: 3rem;
+}
+.back-img{
+
+    background-image: url("https://i.postimg.cc/tC0JMQrC/wallpaperflare-com-wallpaper-5.jpg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode: darken;
     image-rendering: optimizeSpeed;
+}
+
+/* WELCOME MESSAGE */
+.welcome-message {
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate ;
+    animation: glow 1s ease-in-out infinite alternate ;
+  }
+ @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #c017a9, 0 0 30px #470dce, 0 0 40px #d711af, 0 0 50px;
+    }
+    to {
+      text-shadow: 0 0 20px #2b04b7e1, 0 0 30px #cf2278, 0 0 40px #9a07df,
+        0 0 50px #d52e82 ;
+    }
+  }
+
+/* NEON FONT */
+  section {
+    width: 100%;
+  }
+  #h1 {
+    color: var(--var-color);
+    position: relative;
+  }
+  #h1::before {
+    content: attr(data-text);
+    text-shadow: 0px 0px 30px rgb(39, 20, 177);
+    filter: blur(0px) brightness(0);
+    animation: flicker 2s linear forwards;
+    animation-delay: 0.1s;
+  }
+  @keyframes flicker {
+    0% {
+      filter: blur(0px) brightness(1);
+    }
+    3% {
+      filter: blur(0px) brightness(0);
+    }
+    6% {
+      filter: blur(0px) brightness(0);
+    }
+    7% {
+      filter: blur(0px) brightness(1);
+    }
+    8% {
+      filter: blur(0px) brightness(0);
+    }
+    9% {
+      filter: blur(0px) brightness(1);
+    }
+    10% {
+      filter: blur(0px) brightness(0);
+    }
+    20% {
+      filter: blur(0px) brightness(1);
+    }
+    50% {
+      filter: blur(0px) brightness(1);
+    }
+    99% {
+      filter: blur(0px) brightness(0);
+    }
+    100% {
+      filter: blur(0px) brightness(1);
+    }
+  }
+
+.card {
+  border: solid 2px black !important;
+}
+.card-container{
+  padding-top: 2rem;
+}
+img {
+  height: 300px;
+}
+
+.margin {
+  padding-top: 5rem;
+}
+
+
+@media only screen and (max-width: 300px) {
+  img {
+    height: auto !important;
+  }
 }
 
 </style>
